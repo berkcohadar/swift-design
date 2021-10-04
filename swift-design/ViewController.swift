@@ -92,41 +92,54 @@ class ViewController: UIViewController {
         temp4.clipsToBounds = true
         view.addSubview(temp4)
         
-        UIView.animate(withDuration: 50.0,
+        UIView.animate(withDuration: 15.0,
             delay: 0.0,
             usingSpringWithDamping: 0.1,
             initialSpringVelocity: 1,
             options: UIView.AnimationOptions.curveEaseInOut,
             animations: ({
                 temp.center = self.view.center
-        }), completion: nil)
+        }), completion:{_ in
+            temp.removeFromSuperview()
+        })
         
-        UIView.animate(withDuration: 50.0,
+        UIView.animate(withDuration: 15.0,
             delay: 0.0,
             usingSpringWithDamping: 0.1,
             initialSpringVelocity: 1,
             options: UIView.AnimationOptions.curveEaseInOut,
             animations: ({
                 temp2.center = self.view.center
-        }), completion: nil)
+        }), completion:{_ in
+            temp2.removeFromSuperview()
+        })
         
-        UIView.animate(withDuration: 50.0,
+        UIView.animate(withDuration: 15.0,
             delay: 0.0,
             usingSpringWithDamping: 0.1,
             initialSpringVelocity: 1,
             options: UIView.AnimationOptions.curveEaseInOut,
             animations: ({
                 temp3.center = self.view.center
-        }), completion: nil)
+        }), completion:{_ in
+            temp3.removeFromSuperview()
+        })
         
-        UIView.animate(withDuration: 50.0,
+        UIView.animate(withDuration: 15.0,
             delay: 0.0,
             usingSpringWithDamping: 0.1,
             initialSpringVelocity: 1,
             options: UIView.AnimationOptions.curveEaseInOut,
             animations: ({
                 temp4.center = self.view.center
-        }), completion: nil)
+        }), completion:{_ in
+            temp4.removeFromSuperview()
+        })
+        
+        //temp.removeFromSuperview()
+        //temp2.removeFromSuperview()
+        //temp3.removeFromSuperview()
+        //temp4.removeFromSuperview()
 
     }
 }
